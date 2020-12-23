@@ -32,7 +32,7 @@ Press ENTER.
 
 Go down to `Finish` > Press `ENTER`.
 
-When your back in the console type:
+When your back in the console, type:
 
     sudo alsamixer
 
