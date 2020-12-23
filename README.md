@@ -7,14 +7,6 @@ Boot up your Rpi. Use the console or SSH and type:
     sudo apt-get update
 
     sudo apt-get install -y git
-
-    git clone https://github.com/WiringPi/WiringPi.git
-
-    cd WiringPi
-
-    sudo ./build
-
-....wait for the compiling to be done. Then type:
  
     git clone https://github.com/fix-ON/SCART666.git
 
