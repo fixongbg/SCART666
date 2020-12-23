@@ -14,7 +14,7 @@ Boot up your Rpi. Use the console line or SSH and type:
 
     sudo ./build
 
-....wait for compiling to be done.
+....wait for the compiling to be done. Then type:
  
     git clone https://github.com/fix-ON/SCART666.git
 
