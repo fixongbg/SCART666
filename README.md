@@ -2,9 +2,9 @@
 This is modified version of the included vga666 overlay which excludes pin 18, 19, leaving them to be available for PWM audio while using the SCART666 adapter.
 
 # Instructions
-Boot up your Rpi or use SSH and type: 
+Boot up your Rpi. Use the console line or SSH and type:
 
-    sudo apr-get update
+    sudo apt-get update
 
     sudo apt-get install -y git
 
