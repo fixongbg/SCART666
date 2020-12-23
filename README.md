@@ -4,7 +4,7 @@ This is modified version of the included vga666 overlay which excludes pin 18, 1
 
 Boot up your Rpi or use SSH and type: 
 
- sudo apt-get install -y git
+    sudo apt-get install -y git
 
              git clone https://github.com/WiringPi/WiringPi.git
 
