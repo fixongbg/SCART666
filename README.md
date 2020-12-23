@@ -25,7 +25,7 @@ Boot up your Rpi. Use the console or SSH and type:
 # Configuration
 Type the following:
 
-    sudo raspi-config:
+    sudo raspi-config
 
 Choose `Advanced Options > Audio > Force 3.5mm (headphone) jack >`
 Press ENTER. 
