@@ -47,10 +47,4 @@ Eject your SD-card and put it back into the Rpi.
 Connect the SCART666 adapter to the Rpi and hook up all the necessary cables to your TV/Monitor.
 Turn on the Rpi and you should get a 240p picture! 
 
-If qyou want, you can do a audio test by typing:
-
-    sudo aplay /usr/share/sounds/alsa/Front_Center.wav
-
-You'll here a voice saying "Front Center". 
-
 You're all set! Enjoy your SCART666 adapter. 
