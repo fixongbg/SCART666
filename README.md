@@ -1,31 +1,45 @@
 # SCART666
 This is modified version of the included vga666 overlay which excludes pin 18, 19, leaving them to be available for PWM audio while using the SCART666 adapter.
 
-
+# Instructions
 Boot up your Rpi or use SSH and type: 
+
+    sudo apr-get update
 
     sudo apt-get install -y git
 
-             git clone https://github.com/WiringPi/WiringPi.git
+    git clone https://github.com/WiringPi/WiringPi.git
 
-             cd WiringPi
+    cd WiringPi
 
-             sudo ./build
+    sudo ./build
 
 ....wait for compiling to be done.
  
+    git clone https://github.com/fix-ON/SCART666.git
 
-git clone https://github.com/fix-ON/SCART666.git
+    cd SCART666
 
-cd SCART666
-sudo cp scart666.dtbo /boot/overlays/
-sudo raspi-config:
-	Välj Advanced Options > Audio > Force 3.5mm (headphone) jack > 
-Tryck ENTER. 
-Gå ner till Finish > Tryck ENTER.
-Tillbaka i konsolen skriver vi sudo alsamixer
-Tryck på uppåtpilen tills volymen är på max (db gain: 4.00)
-Tryck ESC för att avsluta (inställningarna sparas automatiskt).
+    sudo cp scart666.dtbo /boot/overlays/
+
+# Configuration
+Type the following:
+
+    sudo raspi-config:
+
+Choose `Advanced Options > Audio > Force 3.5mm (headphone) jack >`
+Press ENTER. 
+
+Go down to `Finish` > Press `ENTER`.
+
+When your back in the console type:
+
+    sudo alsamixer
+
+Press the Up arrow key until the volumenisbat MAX (db gain: 4.00).
+
+Press ESC to exit (settings will be saved automatically).
+
 sudo shutdown -h now (Detta kommer stänga av din Raspberry Pi)
 Vänta tills din Rpi har stängts av och ta ut minneskortet. 
 Sätt i minneskortet i datorn. Gå in på minneskortet och öppna config.txt.
