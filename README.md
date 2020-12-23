@@ -36,14 +36,16 @@ When your back in the console, type:
 
     sudo alsamixer
 
-Press the Up arrow key until the volume is at MAX (db gain: 4.00).
+Press the `Up arrow key` until the volume is at MAX (db gain: 4.00).
 
-Press ESC to exit (settings will be saved automatically).
+Press `ESC` to exit (settings will be saved automatically).
 
-sudo shutdown -h now (Detta kommer stänga av din Raspberry Pi)
-Vänta tills din Rpi har stängts av och ta ut minneskortet. 
-Sätt i minneskortet i datorn. Gå in på minneskortet och öppna config.txt.
-Kopiera och klistra in detta längst ner under all text:
+Almost done, just type: 
+
+    sudo shutdown -h now (this will turn off your Rpi). 
+
+Wait until your Rpi is completely off, then take out the SD-card and connect it to your computer. 
+In the root of your SD-card there's a file called `config.txt`. Inside that text file, add this to the bottom of all the text: tills din Rpi har stängts av och ta ut minneskortet. 
  
     dtoverlay=pwm-2chan,pin=18,func=2,pin2=19,func2=2
     dtoverlay=scart666
@@ -54,19 +56,15 @@ Kopiera och klistra in detta längst ner under all text:
     dpi_mode=87
     hdmi_timings=320 1 16 30 34 240 1 2 3 22 0 0 0 60 0 6400000 1
 
-Sätt minneskortet i din Rpi igen.
+Eject your SD-card and put it back into the Rpi.
 
-Koppla på SCART666 över din Rpi om du inte redan gjort det.
+Connect the SCART666 adapter to the Rpi and hook up all the necessary cables to your TV/Monitor.
 
-Koppla in den till TV’n och starta upp din Rpi.
+Turn on the Rpi and you should get a 240p picture! 
 
-Du bör nu se din Rpi boota upp i 240p upplösning eller liknande. 
-
-Om du vill kan du göra ett ljudtest: 
+If you want, you can do a audio test by typing:
 sudo aplay /usr/share/sounds/alsa/Front_Center.wav
 
-Du bör höra en kvinnoröst som säger “Front Center”. 
-Annars är allting klart! Njut nu av din Rpi i RGB med ljud via SCART. 
- 
-Har du några problem eller frågor? 
-Tveka in på att maila contact@fix-ON.se
+You'll here a voice saying "Front Center". 
+
+You're all set! Enjoy your SCART666 adapter. 
