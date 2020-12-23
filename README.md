@@ -1,16 +1,22 @@
 # SCART666
-This is modified version of the included vga666 overlay which excludes pin 18, 19, leaving them to be available for PWM audio while using the gertVGA666 adapter.
+This is modified version of the included vga666 overlay which excludes pin 18, 19, leaving them to be available for PWM audio while using the SCART666 adapter.
 
 
-Boota upp din Raspberry Pi och skriv följande i konsolen (command line):
-sudo apt-get update
-sudo apt-get install -y git
-git clone https://github.com/WiringPi/WiringPi.git
-cd WiringPi
-sudo ./build
+Boot up your Rpi or use SSH and type: 
+
+             sudo apt-get install -y git
+
+             git clone https://github.com/WiringPi/WiringPi.git
+
+             cd WiringPi
+
+             sudo ./build
+
 ....wait for compiling to be done.
  
+
 git clone https://github.com/fix-ON/SCART666.git
+
 cd SCART666
 sudo cp scart666.dtbo /boot/overlays/
 sudo raspi-config:
