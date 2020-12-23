@@ -22,17 +22,11 @@ Boot up your Rpi. Use the console or SSH and type:
 
     sudo cp scart666.dtbo /boot/overlays/
 
-# Configuration
-Type the following:
-
     sudo raspi-config
 
-Choose `Advanced Options > Audio > Force 3.5mm (headphone) jack >`
-Press ENTER. 
+Choose `Advanced Options > Audio > Force 3.5mm (headphone) jack`.
 
-Go down to `Finish` > Press `ENTER`.
-
-When your back in the console, type:
+Go down to `Finish` and when your back at the console, type: 
 
     sudo alsamixer
 
@@ -42,10 +36,10 @@ Press `ESC` to exit (settings will be saved automatically).
 
 Almost done, just type: 
 
-    sudo shutdown -h now (this will turn off your Rpi). 
+    sudo shutdown -h now 
 
 Wait until your Rpi is completely off, then take out the SD-card and connect it to your computer. 
-In the root of your SD-card there's a file called `config.txt`. Inside that text file, add this to the bottom of all the text: tills din Rpi har stängts av och ta ut minneskortet. 
+In the root of your SD-card there's a file called `config.txt`. Inside that text file, add this to the bottom of all the text:
  
     dtoverlay=pwm-2chan,pin=18,func=2,pin2=19,func2=2
     dtoverlay=scart666
@@ -59,11 +53,11 @@ In the root of your SD-card there's a file called `config.txt`. Inside that text
 Eject your SD-card and put it back into the Rpi.
 
 Connect the SCART666 adapter to the Rpi and hook up all the necessary cables to your TV/Monitor.
-
 Turn on the Rpi and you should get a 240p picture! 
 
-If you want, you can do a audio test by typing:
-sudo aplay /usr/share/sounds/alsa/Front_Center.wav
+If qyou want, you can do a audio test by typing:
+
+    sudo aplay /usr/share/sounds/alsa/Front_Center.wav
 
 You'll here a voice saying "Front Center". 
 
