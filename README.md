@@ -42,7 +42,7 @@ In the root of your SD-card there's a file called `config.txt`. Inside that text
     dpi_mode=87
     hdmi_timings=320 1 16 30 34 240 1 2 3 22 0 0 0 60 0 6400000 1
 
-Eject your SD-card and put it back into the Rpi.
+Save the file, eject your SD-card and put it back into the Rpi.
 
 Connect the SCART666 adapter to the Rpi and hook up all the necessary cables to your TV/Monitor.
 Turn on the Rpi and you should get a 240p picture! 
