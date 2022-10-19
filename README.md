@@ -8,7 +8,7 @@ Boot up your Rpi. Use the console or SSH and type:
 
     sudo apt-get install -y git
  
-    git clone https://github.com/fix-ON/SCART666.git
+    git clone https://github.com/fixongbg/SCART666.git
 
     cd SCART666
 
