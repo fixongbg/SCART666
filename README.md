@@ -16,7 +16,7 @@ Boot up your Rpi. Use the console or SSH and type:
 
     sudo raspi-config
 
-Choose `System Options > Audio > Headphones`.
+    Choose System Options > Audio > Headphones.
 
 Go down to `Finish` and when your back at the console, type: 
 
