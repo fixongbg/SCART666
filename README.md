@@ -8,7 +8,7 @@ Boot up your Rpi. Use the console or SSH and type:
 
     sudo apt-get install -y git
  
-    git clone https://github.com/fixongbg/SCART666.git
+    sudo git clone https://github.com/fixongbg/SCART666.git
 
     cd SCART666
 
@@ -16,7 +16,7 @@ Boot up your Rpi. Use the console or SSH and type:
 
     sudo raspi-config
 
-Choose `Advanced Options > Audio > Force 3.5mm (headphone) jack`.
+Choose `System Options > Audio > Headphones`.
 
 Go down to `Finish` and when your back at the console, type: 
 
