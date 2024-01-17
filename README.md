@@ -33,6 +33,7 @@ Almost done, just type:
 Wait until your Rpi is completely off, then take out the SD-card and connect it to your computer. 
 In the root of your SD-card there's a file called `config.txt`. Inside that text file, add this to the bottom after all the text:
  
+    dtparam=audio=on
     dtoverlay=pwm-2chan,pin=18,func=2,pin2=19,func2=2
     dtoverlay=scart666
     enable_dpi_lcd=1
